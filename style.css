@@ -1,0 +1,60 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: blue;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Animation for the box */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animated {
+    animation: bounce 1s ease;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark-mode .box {
+    background-color: #444;
+  }
+  
